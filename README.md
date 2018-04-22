@@ -1,4 +1,9 @@
-POC about angular-compilers ignoring declarations.d.ts 
+POC about angular-compilers ignoring declarations.d.ts.
+
+Available from [atao60/meteor-angular-no-type-declaration
+](https://github.com/atao60/meteor-angular-no-type-declaration).
+
+Used for issue [typescript compiler ignoring *.d.ts files](https://github.com/Urigo/angular-meteor/issues/1909).
 
 Ref. : 
 * [Angular-Meteor update to 1.6.1.1 typescript compiler missing declarations](https://stackoverflow.com/questions/49744034/angular-meteor-update-to-1-6-1-1-typescript-compiler-missing-declarations/49821231?noredirect=1#comment86713844_49821231)
@@ -26,6 +31,8 @@ cd meteor-angular-bare
 git init
 git add --all
 git commit -m 'angular-meteor bare example as it'
+git remote add origin git@github.com:atao60/meteor-angular-no-type-declaration.git
+git push -u origin master
 
 meteor update --release 1.6.1.1
 [...]
@@ -163,4 +170,3 @@ server/main.ts (12, 24): Parameter 'dirPath' implicitly has an 'any' type.
 => App running at: http://localhost:3000/
 ```
 
-Create an issue: see [typescript compiler ignoring *.d.ts files]().
