@@ -16,8 +16,9 @@
     "target": "es5",
     "skipLibCheck": true,
     "stripInternal": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "types": [
+      "@types/node",
       "@types/meteor",
       "@types/mocha",
       "@types/chai",
@@ -25,6 +26,7 @@
     ]
   },
   "include": [
+    "declarations.d.ts",
     "imports/**/*.ts",
     "client/**/*.ts",
     "server/**/*.ts"
